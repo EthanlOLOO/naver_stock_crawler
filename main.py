@@ -12,7 +12,7 @@ def fetch_html():
     return html
 
 def get_top_transactions():
-    units_up1 = html.select('#_topItems1 > tr')
+    units_up1 = html.select('#_topItems1 > tr')  # 거래상위 가져오기
     
     top_transactions = []
 
@@ -35,7 +35,7 @@ def get_top_transactions():
 
 
 def top_price():
-    units_up = html.select('#_topItems2 > tr')  # 오늘 상한가 종목들 전부 다 가져오는거
+    units_up = html.select('#_topItems2 > tr')  # 상한가 가져오기
 
     top_prices = []
 
@@ -58,7 +58,7 @@ def top_price():
 
 
 def low_price():
-    units_up = html.select('#_topItems3 > tr')  # 오늘 상한가 종목들 전부 다 가져오는거
+    units_up = html.select('#_topItems3 > tr')  # 하한가 가져오기
 
     low_prices = []
 
@@ -81,7 +81,7 @@ def low_price():
 
 
 def market_cap():
-    units_up1 = html.select('#_topItems4 > tr')
+    units_up1 = html.select('#_topItems4 > tr')  # 시가총액 상위 가져오기
     
     market_caps = []
 
